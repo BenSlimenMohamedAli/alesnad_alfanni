@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Our Supplies & Services{% endblock %}
+
+{% block body %}
+<div class="sections" style="background-image: url('{{asset('assets/img/spare.jpg')}}')">
+    <div class="container">
+        <div class="pages-title">
+            <h1>Al Esnad Al Fani <br> <span>Our Supplies & Services</span></h1>
+            <p><a href="{{path('home')}}">Home</a> &nbsp; > &nbsp; <a href="{{path('spare_parts')}}">Our Supplies & Services</a></p>
+        </div>
+    </div>
+</div>
+<!-- CONTENT START -->
+<section>
+    <!-- TEAM START -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <a href="{{path('instrument_supplies')}}">
+                    <div class="team-portrait">
+                        <figure class="tp-headshot"><img src="{{asset('assets/img/one.png')}}"
+                                alt="Instrument Supplies Image"></figure>
+                        <div class="tp-caption">
+                            <div class="inner-tp-caption">
+                                <h3>Instrument Supplies</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 tp-movil-view">
+                <a href="{{path('fitting_pipe_supplies')}}">
+                    <div class="team-portrait">
+                        <figure class="tp-headshot"><img src="{{asset('assets/img/home/fitting_pipe.png')}}"
+                                alt="Fitting & Pipe Supplies Image"></figure>
+                        <div class="tp-caption">
+                            <div class="inner-tp-caption">
+                                <h3>Fitting & Pipe Supplies</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 tp-tablet-view">
+                <a href="{{path('elestomers_supplies')}}">
+                    <div class="team-portrait">
+                        <figure class="tp-headshot"><img src="{{asset('assets/img/home/elestromers.png')}}"
+                                alt="Elestomers supplies Image"></figure>
+                        <div class="tp-caption">
+                            <div class="inner-tp-caption">
+                                <h3>Elestomers supplies</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="{{path('downhole_equipement')}}">
+                    <div class="team-portrait tp-desktop-view">
+                        <figure class="tp-headshot"><img src="{{asset('assets/img/home/downwhole.png')}}"
+                                alt="Downhole equipment Image"></figure>
+                        <div class="tp-caption">
+                            <div class="inner-tp-caption">
+                                <h3>Downhole equipment</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="{{path('rental_services')}}">
+                    <div class="team-portrait tp-desktop-view">
+                        <figure class="tp-headshot"><img src="{{asset('assets/img/home/service.png')}}" alt="Rental Services Image">
+                        </figure>
+                        <div class="tp-caption">
+                            <div class="inner-tp-caption">
+                                <h3>Rental Services</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <a href="{{path('manpower_supply')}}">
+                    <div class="team-portrait tp-desktop-view">
+                        <figure class="tp-headshot"><img src="{{asset('assets/img/home/manpower.png')}}" alt="Manpower Supply Image">
+                        </figure>
+                        <div class="tp-caption">
+                            <div class="inner-tp-caption">
+                                <h3>Manpower Supply</h3>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- TEAM START -->
+</section>
+<!-- CONTENT START -->
+
+{% endblock %}

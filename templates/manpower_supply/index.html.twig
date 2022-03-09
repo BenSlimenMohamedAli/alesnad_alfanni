@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Manpower Supply - Our Supplies & Services{% endblock %}
+
+{% block body %}
+   <div class="sections" style="background-image: url('{{asset('assets/img/4kback.jpg')}}')">
+    <div class="container">
+        <div class="pages-title">
+            <h1>Al Esnad Al Fani <br> <span>Manpower Supply</span></h1>
+            <p><a href="{{path('home')}}">Home</a> &nbsp; > &nbsp; <a href="{{path('spare_parts')}}"> Our Supplies & Services</a> &nbsp; > &nbsp; <a href="{{path('manpower_supply')}}"> Manpower Supply</a></p>
+        </div>
+    </div>
+</div>
+<!-- CONTENT START -->
+
+<div class="conainer-fluid text-center">
+    <img width="100%" src="{{asset('assets/img/manpower.jpg')}}" alt="manpower"/>
+</div>
+
+{% endblock %}

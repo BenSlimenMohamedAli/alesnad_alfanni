@@ -1,0 +1,108 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}home page{% endblock %}
+
+{% block body %}
+  <!--SLIDER START-->
+    <div class="home-slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+              <!-- Slide One - Set the background image for this slide in the line below -->
+              <div class="carousel-item active" style="background-image: url('{{asset('assets/img/slider1.jpg')}}')">
+                <div class="container">
+                    <div class="slider-caption">
+                        <h2 class="display-4 animated fadeInRight">The Power<br> <span>For The Future</span></h2>
+                    </div>  
+                </div>
+              </div>
+              <!-- Slide Two - Set the background image for this slide in the line below -->
+              <div class="carousel-item" style="background-image: url('{{asset('assets/img/slider2.jpg')}}')">
+                <div class="container">
+                    <div class="slider-caption">
+                        <h2 class="display-4 animated fadeInRight">Building <br> <span>Your Dreams</span></h2>
+                    </div>  
+                </div>
+              </div>
+              <!-- Slide Three - Set the background image for this slide in the line below -->
+              <div class="carousel-item" style="background-image: url('{{asset('assets/img/slider.jpg')}}')">
+                <div class="container">
+                    <div class="slider-caption">
+                        <h2 class="display-4 animated fadeInRight">Fueling<br> <span>The Future </span></h2>
+                    </div>  
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>  
+    </div>
+    <!--SLIDER END-->
+    
+    <div class="container-fluid construction-wide-banner">
+        <div class="wide-banner-content">
+            <h2>Al Esnad Al Fani Oil Services</h2>
+            <p>Fueling the Future</p>
+        </div>
+    </div>
+    
+    <div class="container construction-services">
+        <div class="row hover-effects image-hover">
+          <div class="col-lg-4">
+          <a href="{{path('vision')}}">
+            <div class="thumbnail-box-alt">
+                <figure class="tb-image"><img src="{{asset('assets/img/vision.png')}}" alt="Our vision Image"></figure>  
+                <div class="tb-caption">
+                    <div class="inner-caption">
+                        <div class="ic-top">
+                          <h3>Our vision</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-4 center-box">
+          <a href="{{path('spare_parts')}}">
+            <div class="thumbnail-box-alt">
+                <figure class="tb-image"><img src="{{asset('assets/img/spare_parts.png')}}" alt="Our Supplies & Services Image"></figure>    
+                <div class="tb-caption">
+                    <div class="inner-caption">
+                        <div class="ic-top">
+                            <h3>Our Supplies & Services</h3>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            </a> 
+          </div>
+          <div class="col-lg-4">
+          <a href="{{path('contact')}}">
+            <div class="thumbnail-box-alt">
+                <figure class="tb-image"><img src="{{asset('assets/img/contact_us.png')}}" alt="Contact Us Image"></figure>  
+                <div class="tb-caption">
+                    <div class="inner-caption">
+                        <div class="ic-top">
+                            <h3>Contact Us</h3>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            </a> 
+          </div>
+        </div>
+    </div>
+
+      <div class="container-fluid wide-banner" style="background-image : url('{{asset('assets/img/about.png')}}'); background-repeat: no-repeat; background-size : cover">
+            <div class="">
+                <h5>About Us</h5>
+                <h2>KNOW ABOUT US</h2>
+                <p>Al Esnad Al Fani Services Company (ESCO) Target to supply equipment among other into North Africa Region, ESCO did not want to be one among the many of supply companies, so we went a different way by acting in most cases as a technical advisor for the areas in which we conduct our business. Please revert to list of material, equipment and instruments which we list within our scope of supply.</p>
+            </div>
+        </div>
+{% endblock %}

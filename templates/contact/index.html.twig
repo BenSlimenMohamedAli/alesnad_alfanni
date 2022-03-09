@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+<!-- CONTENT START -->
+<section>
+    <div class="sections" style="background-image: url('{{asset('/assets/img/contact.jpg')}}');">
+        <div class="container">
+            <div class="pages-title">
+                <h1>Al Esnad Al Fani <br> <span>Contact Us</span></h1>
+                <p><a href="{{path('home')}}">Home</a> &nbsp; > &nbsp; <a href="{{path('contact')}}">Contact Us</a></p>
+            </div>
+        </div>  
+    </div>
+    <!-- CONTACT INFO START -->
+    <div class="container">
+        <div class="section-title">
+            <h2>KEEP <span>IN TOUCH</span></h2>
+            <p>We’re here to help and answer any question you might have. We look forward to hearing from you</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="contact-box">
+                    <figure class="contact-icon"><img src="{{asset('assets/img/master/telephone.svg')}}" alt=""></figure>
+                    <p>+ 218 21 723 2331</p>
+                </div>
+            </div>
+            <div class="col-lg-4 center-box">
+                <div class="contact-box">
+                    <figure class="contact-icon"><img src="{{asset('assets/img/master/location.svg')}}" alt=""></figure>
+                    <p>Alesnad Alfani for Oil Field Services Janzour, Tripoli - Libya P.O.Box 98530
+</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-box">
+                    <figure class="contact-icon"><img src="{{asset('assets/img/master/close-envelope.svg')}}" alt=""></figure>
+                    <p>contact@alesnad-ly.com</p>
+                    <a href="mailto:contact@alesnad-ly.com" class="btn btn-warning text-white btn-md">Send us an email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT INFO END -->
+</section>
+<!-- CONTENT START -->
+
+{% endblock %}

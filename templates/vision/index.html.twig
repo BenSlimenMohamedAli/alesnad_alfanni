@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Our Vision{% endblock %}
+
+{% block body %}
+<section>
+    <div class="sections" style="background-image: url('{{asset('assets/img/4kback.jpg')}}')">
+        <div class="container">
+            <div class="pages-title">
+                <h1>Al Esnad Al Fani <br> <span>Our Vision</span></h1>
+                <p><a href="{{path('home')}}">Home</a> &nbsp; > &nbsp; <a href="{{path('vision')}}">Our Vision</a></p>
+            </div>
+        </div>  
+    </div>
+</section>
+
+<div class="container-fluid wide-banner" style="background-image : url('{{asset('assets/img/about.png')}}'); background-repeat: no-repeat; background-size : cover">
+            <div class="">
+                <h5>Vision</h5>
+                <h2>Our Vision</h2>
+                <p>Although our company is recently established, but we are trying to differentiate ourselves by the technical support that we can provide to our international and local customers utilizing the extensive experience of our staff which they acquired throughout.  </p>
+                <p>It is our aim and goal to continue and expand our relationship with our customers and vendors to keep them happy through fast and courteous service, quality products, competitive prices and back-up of the products we delivered. </p>
+                <p>It is our philosophy that a given word is as good as a contract and the key to success is service to our customers. </p>
+            </div>
+        </div>
+{% endblock %}

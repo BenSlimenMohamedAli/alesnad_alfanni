@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alesnad-ly || {% block title %}{% endblock %}</title>
+    {#  FAVICON  #}
+    <link rel="shortcut icon" href="{{asset('assets/img/logo/logo1.jpg')}}">
+
+    {# META TAGS #}
+    <meta name="keywords" content="Oil, gas, Alesnad Al Fani, Petrol, energy, engineering, gas, industrial, industries, manufacturing, material, mechanical, oil, petroleum, Spare parts, Our Supplies & Services, pumps, tunisia, lybya, company">
+    {% block keywords %}{% endblock %}
+    {# Stylesheets #}
+    <link rel="stylesheet" type="text/css" href="{{ asset('/assets/fonts/css/all.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/animate.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/navigation.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/slick.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/stylesheet.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/responsive.css') }}">
+
+    {% block stylesheets %}{% endblock %}
+
+    {# scripts #}
+    <script src="{{asset('/assets/js/modernizr-custom.js')}}"></script>
+</head>
+
+<body>
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+    <!-- LOADER -->
+
+    <!--HEADER START-->
+    <header>
+        <!--TOP HEADER START-->
+        <div class="top-header">
+            <div class="container">
+                <div class="header-left">
+                    <p><strong>Phone:</strong> + 218 21 723 2331 &nbsp; &nbsp; &nbsp;<strong>Fax:</strong> + 218 21 486 3562</p>
+                </div>
+                <div class="header-right">
+                   <div class="ht-right-email">
+                        <p>contact@alesnad-ly.com</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <!--TOP HEADER END-->
+        
+        <!--MEGAMENU START-->
+        <div class="main-nav" id="navbar">
+            <div class="container">
+                <nav id="navigation1" class="navigation">
+                    <div class="nav-header">
+                        <a class="nav-logo" href="{{path('home')}}">
+                            <img src="{{asset('assets/img/logo/logo2.png')}}"  class="white-logo" alt="alesnad-ly logo">
+                        </a>
+                        <div class="nav-toggle"></div>
+                    </div>
+                    <div class="nav-menus-wrapper">
+                        <ul class="nav-menu align-to-right">
+                            <li><a href="{{path('home')}}">HOME</a></li>
+                            <li><a href="{{path('vision')}}">Our Vision</a></li>
+                            <li><a href="{{path('spare_parts')}}">Our Supplies & Services</a></li>
+                            <li><a href="{{path('contact')}}">Contact</a></li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--MEGAMENU END-->         
+    </header>
+    <!--HEADER END-->
+    
+    {% block body %}{% endblock %}
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="footer-col">
+                  <figure class="footer-logo"><img src="{{asset('assets/img/logo/logo2.png')}}" alt="alesnad-ly logo"></figure>
+                  <p>Al Esnad Al Fani Services Company (ESCO) Target to supply equipment among other into North Africa Region.</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="footer-col">
+                  <h4>PAGES</h4>
+                  <div class="popular-links">
+                    <ul>
+                        <li><a href="{{path('home')}}">Home</a></li>
+                        <li><a href="{{path('vision')}}">Our Vision</a></li>
+                        <li><a href="{{path('spare_parts')}}">Our Supplies & Services</a></li>
+                        <li><a href="{{path('contact')}}">Contact US</a></li>
+                    </ul>  
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="footer-col last-col">
+                  <h4>CONTACT</h4>
+                  <div class="footer-icon">
+                    <div class="span-fi">
+                        <div class="fi-fas"><i class="fas fa-map-marker"></i></div>
+                        <div class="fi-caption">
+                            <p>Janzour, Tripoli - Liby P.O.Box 98530</p>  
+                        </div>
+                    </div> 
+                    <div class="span-fi">
+                        <div class="fi-fas"><i class="fas fa-phone"></i></div>
+                        <div class="fi-caption">
+                            <p>Phone: + 218 21 723 2331</p>
+                        </div>
+                    </div> 
+                    <div class="span-fi">
+                        <div class="fi-fas"><i class="fa fa-fax"></i></div>
+                        <div class="fi-caption">
+                            <p>Fax : + 218 21 486 3562</p>
+                        </div>
+                    </div> 
+                    <div class="span-fi">
+                        <div class="fi-fas"><i class="fas fa-envelope"></i></div>
+                        <div class="fi-caption">
+                            <p>contact@alesnad-ly.com</p>  
+                        </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="divider">
+            <div class="footer-bottom">
+                <div class="fb-copyright">
+                    <p>© 2019 Nuevera</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <!--SCROLL TOP START-->
+    <a href="#0" class="cd-top">Top</a>
+    <!--SCROLL TOP START-->
+
+    <script src="{{asset('/assets/js/plugins.js')}}"></script>
+    <script src="{{asset('/assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('/assets/js/main.js')}}"></script>
+    <script src="{{asset('/assets/js/navigation.js')}}"></script>
+    {% block javascripts %}{% endblock %}
+</body>
+
+</html>
